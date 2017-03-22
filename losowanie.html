@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body background="background.png">
+<center>
+<button onclick="losowanie2()">Losuj 1 osobę</button>
+<button onclick="losowanie1()">Losuj 3 osoby</button>
+<p id="demo"></p>
+<script>
+	var nazwiska = ["Biedrzyński", "Boguszyński","Dechnik","Dudziak","Grześkowiak","Hromada","Kruczek","Kupka","Łysikowski","Klemczak",
+	"Wawrzyniak","Ozdoba","Gruszka","Maciejewski","Majda","Waściński","Metelski","Rzeźniczak","Tomaszewski","Jonio","Wyzuj","Żurek",];
+	function losowanie1(){
+		var a = Math.floor(Math.random()*22);
+		var b = Math.floor(Math.random()*22);
+		var c = Math.floor(Math.random()*22);
+		document.getElementById("demo").innerHTML=nazwiska[a-1]+" "+nazwiska[b-1]+" "+nazwiska[c-1];	
+	}
+	function losowanie2(){
+		var d = Math.floor(Math.random()*22);
+		document.getElementById("demo").innerHTML=nazwiska[d-1];
+	}
+</script>
+</center
+</body>
+</html>
